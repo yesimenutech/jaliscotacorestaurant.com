@@ -892,42 +892,24 @@
             .lb-next { right: 20px; }
         }
 
-        @media (max-width: 768px) {
-
+      @media (max-width: 768px) {
     .magnetic-wrap {
-        display: flex;
-        justify-content: center;
-        width: 100%;
-        padding: 12px 15px;
-        box-sizing: border-box;
+        position: relative;
+        top: -35px;
+        margin-bottom: -35px;
+        padding: 10px 15px;
+        z-index: 20;
     }
 
     .magnetic-inner {
-        width: 100%;
-        max-width: 320px;
-        display: flex;
-        justify-content: center;
-    }
-
-    .btn-hover-fx {
-        width: 100%;
-        max-width: 320px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        box-sizing: border-box;
-        transform: none !important;
-    }
-
-    .magnetic-wrap:hover .btn-hover-fx {
-        transform: none;
-        box-shadow: 0 10px 20px rgba(0,0,0,0.25);
+        position: relative;
+        z-index: 21;
     }
 
     .magnetic-inner menutech-reservations {
+        position: relative;
+        z-index: 22;
         display: block;
-        width: 100%;
-        max-width: 320px;
     }
 }
 
