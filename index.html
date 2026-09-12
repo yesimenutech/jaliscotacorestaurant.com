@@ -893,6 +893,59 @@
         }
 
         @media (max-width: 768px) {
+
+    .magnetic-wrap {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        padding: 12px 15px;
+        box-sizing: border-box;
+    }
+
+    .magnetic-inner {
+        width: 100%;
+        max-width: 320px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .btn-hover-fx {
+        width: 100%;
+        max-width: 320px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-sizing: border-box;
+        transform: none !important;
+    }
+
+    .magnetic-wrap:hover .btn-hover-fx {
+        transform: none;
+        box-shadow: 0 10px 20px rgba(0,0,0,0.25);
+    }
+
+    .magnetic-inner menutech-reservations {
+        display: block;
+        width: 100%;
+        max-width: 320px;
+    }
+}
+
+/* 📱 CELULARES PEQUEÑOS */
+@media (max-width: 400px) {
+
+    .magnetic-wrap {
+        padding: 10px 12px;
+    }
+
+    .magnetic-inner,
+    .btn-hover-fx,
+    .magnetic-inner menutech-reservations {
+        max-width: 100%;
+    }
+}
+
+        @media (max-width: 768px) {
             .mobile-toggle { display: flex; }
             .nav-menu {
                 position: absolute; top: 100%; left: 0; width: 100%;
