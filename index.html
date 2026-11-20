@@ -375,6 +375,29 @@
             gap: 18px;
         }
 
+        .btn-order-hero {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: var(--primary);
+            color: var(--bg-white);
+            font-family: var(--font-heading);
+            font-size: 1.08rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1.2px;
+            padding: 14px 28px;
+            border-radius: 8px;
+            border: 2px solid var(--gold);
+            box-shadow: 0 10px 24px rgba(0, 0, 0, 0.3);
+            transition: transform 0.2s ease, background-color 0.2s ease;
+        }
+
+        .btn-order-hero:hover {
+            background: var(--primary-dark);
+            transform: translateY(-2px);
+        }
+
         .btn-pdf-hero {
             display: inline-flex;
             align-items: center;
@@ -1429,17 +1452,12 @@
             </p>
 
             <div class="hero-actions">
-                <script src="https://www.fbgcdn.com/embedder/js/ewm2.js"></script>
-                <script src="https://menutech.xyz/menutechUI.min.js"></script>
-
-                <menutech-orders
-                    cuid="a71bf8ad-b195-4752-aeb8-a903b9ecc1b2"
-                    ruid="0f738e4d-7676-4711-a013-69fa8e53ecda"
-                    background="#C42026"
-                    color="#ffffff"
-                    data-glf-cuid="a71bf8ad-b195-4752-aeb8-a903b9ecc1b2"
-                    data-glf-ruid="0f738e4d-7676-4711-a013-69fa8e53ecda">
-                </menutech-orders>
+                <a href="https://www.menu-technology.com/ordering/restaurant/menu?company_uid=a71bf8ad-b195-4752-aeb8-a903b9ecc1b2&restaurant_uid=0f738e4d-7676-4711-a013-69fa8e53ecda&facebook=true"
+                   target="_blank"
+                   rel="noopener"
+                   class="btn-order-hero">
+                    <span data-en="Order Online" data-es="Ordenar en Línea">Order Online</span>
+                </a>
 
                 <a href="#menu" class="btn-pdf-hero">
                     <svg viewBox="0 0 24 24"><path d="M18 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2zM6 4h5v8l-2.5-1.5L6 12V4z"/></svg>
@@ -1800,10 +1818,6 @@
 
     <script>
         document.getElementById('dynamic-year').textContent = new Date().getFullYear();
-
-        setTimeout(() => {
-            if (window.glfBindButtons) window.glfBindButtons();
-        }, 1500);
 
         const mobileToggle = document.getElementById('mobile-toggle');
         const navMenu = document.getElementById('nav-menu');
